@@ -1,0 +1,12 @@
+version: '3'
+services:
+  makemkv:
+    image: jlesage/makemkv
+    ports:
+      - "5800:5800"
+    volumes:
+      - "/home/admin/docker-volumes/appdata/makemkv:/config:rw"
+      - "/source-dir:/storage:ro"
+      - "/output-dir:/output:rw"
+    devices:
+      - "/dev/sr0:/dev/sr0"
