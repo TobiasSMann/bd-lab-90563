@@ -12,7 +12,7 @@ services:
       - "8081:80/tcp"
     environment:
       TZ: 'America/Denver'
-      WEBPASSWORD: anemia-azimuth-optative
+      WEBPASSWORD: ADD A PASSWORD HERE
     # Volumes store your data between container upgrades
     volumes:
       - ~/docker-volumes/pihole/etc:/etc/pihole/
